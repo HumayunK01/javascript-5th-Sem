@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+</head>
+<body>
+    <form name="info">
+        <label>Customer</label>
+        <input type="radio" name="rad" id="cust" value="Customer" checked="true" onclick="CUST(this.value)">
+        <label>Employee</label>
+        <input type="radio" name="rad" id="emp" value="Employee" onclick="CUST(this.value)">
+        <br>
+        <br>
+        <input type="button" value="InActive" id="btn" onclick="active_inactive(this.value)">
+        <br>
+        <br>
+        <label>First Name:</label>
+        <input type="text" id="fn" value="Humayun">
+        <br>
+        <br>
+        <label>Last Name:</label>
+        <input type="text" id="ln" value="Khan">
+        <br>
+        <br>
+        <label>Customer ID:</label>
+        <input type="text" id="cust_id" value="C101">
+        <br>
+        <br>
+        <label>Amount:</label>
+        <input type="text" id="amount" value="10,000">
+    </form>
+</body>
+<script src="Practice1.js"></script>
+</html>

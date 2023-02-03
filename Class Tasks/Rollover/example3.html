@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Action Rollover</title>
+</head>
+<body style="font-family: cursive;">
+    <img src="assets/computer.jpeg" alt="computer" name="sale">
+    <br>
+    <a href="#" onmouseover="multipleAction(1)" onmouseout="w.close()">Desktop</a>
+    <br><br>
+    <a href="#" onmouseover="multipleAction(2)" onmouseout="w.close()">Laptop</a>
+</body>
+<script>
+    function multipleAction(n){
+        if(n == 1){
+            document.sale.src = "assets/computer.jpeg";
+            w = window.open('','Window 1','height = 100px, width = 300px top=500px left=1000px')
+            w.document.write("10% Discount Available on Desktop")
+        }
+        else{
+            document.sale.src = "assets/laptop.jpg";
+            w = window.open('','Window 2','height = 100px, width = 300px top=500px left=1000px')
+            w.document.write("20% Discount Available on Laptop")
+        }
+    }
+</script>
+</html>

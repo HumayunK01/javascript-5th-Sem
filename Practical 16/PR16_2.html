@@ -1,0 +1,33 @@
+<html><head>
+    <script>
+        Pictures = new Array("1.jpg","2.jpg","3.jpg")
+        cp=0
+        function RunSlideShow(ForwardBack){
+            if (document.images)
+            {
+                cp = cp + ForwardBack
+                if(cp >( Pictures.length -1))
+                {
+                    cp=0;
+                }
+              document.PictureDisplay.src = Pictures[cp]  
+             
+            }
+            window.setTimeout("RunSlideShow(1)",2000)
+        }
+    </script>
+    </head>
+    <body onload="RunSlideShow(1)">
+      <p align="center">
+        <img src="1.jpg" name="PictureDisplay">
+      </p>
+      <center>
+        <table border="0">
+            <tr>
+                <td align="center">
+                  </td>
+            </tr>
+        </table>
+      </center>
+    </body>
+</html>
